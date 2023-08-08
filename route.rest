@@ -1,0 +1,30 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/64d21b40741de568d7ea31a1
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Jayharron Abejar",
+    "age" : 22,
+    "favoriteColor": "blue"
+}
+
+###
+
+DELETE http://localhost:3000/users/64d21ac247ea9e01f9606103
+
+
+###
+
+PATCH http://localhost:3000/users/64d21b40741de568d7ea31a1
+Content-Type: application/json
+
+{
+    "name": "Jayharron Mar Abejar"
+}
