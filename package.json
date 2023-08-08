@@ -2,9 +2,9 @@
   "name": "rest-api-with-nodejs-express-and-mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "devStart": "nodemon"
+    "devStart": "nodemon server.js"
   },
   "keywords": [
     "rest",
