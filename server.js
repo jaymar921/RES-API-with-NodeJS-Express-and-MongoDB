@@ -22,21 +22,7 @@ const usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
 
 const mainRouter = require('./routes/main')
-
-app.get("/", (req, res) => res.type('html').send(html));
-const html = `
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>I'm online!</title>
-  </head>
-  <body>
-    <h1>
-      I'm online
-    </h1>
-  </body>
-</html>
-`
+app.use('/', mainRouter);
 
 const server = app.listen(port, () => {
     console.log(`Server Started, running on port: ${port}`);
